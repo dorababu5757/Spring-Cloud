@@ -28,7 +28,7 @@ public class TestControllerClient {
 	
 	  public void getEmployee() throws RestClientException, IOException {
 	  
-	  ServiceInstance serviceInstance=loadBalancer.choose("employee-zuul-service");
+	  ServiceInstance serviceInstance=loadBalancer.choose("employee-server");
 	  
 	  System.out.println(serviceInstance.getUri());
 	  
